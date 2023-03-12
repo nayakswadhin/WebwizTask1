@@ -1,3 +1,7 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 header{
     display: flex;
     justify-content: space-around;
@@ -10,6 +14,7 @@ header{
     padding: 2rem 0rem;
     background-color: white;
     z-index: 30;
+    margin: auto;
 }
 header > div{
     color: black;
@@ -54,17 +59,16 @@ a.two:hover{
 .home{
     display: flex;
     justify-content: space-between;
-    margin-block: 2rem;
+    margin: auto;
 }
 .home > div{
     font-size: 1.33rem;
-    margin: 0.67rem;
     font-family: sans-serif;
-    margin-left: auto;
+    color: hsl(229, 8%, 60%);
 }
 .body_position{
-    padding: 10rem 3.33rem;
-    
+    padding: 15rem 8rem;
+    margin: auto; 
 }
 .homeButton{
     margin: 2rem 0rem;
@@ -81,14 +85,14 @@ a.two:hover{
 }
 .homeImg{
     height:23.33rem;
-    width:33.33rem;
+    width:30.33rem;
 }
 .platforms{
     text-align: center;
     display: block;
     color: hsl(229, 31%, 21%);
     font-size: 2rem;
-    margin-top: -9.2rem;
+    margin: auto;
 }
 .platformBox{
     display: flex;
@@ -184,10 +188,12 @@ a.three:hover{
     .platforms{
         font-size: 3rem;
         margin-right: -24rem;
+        padding-bottom: 2rem;
     }
     .platformBox{
         flex-direction: column;
-        justify-content: center; 
+        justify-content: center;
+        align-items: center; 
         margin-right: -20rem; 
         padding: -0.67rem;  
     }
@@ -202,9 +208,8 @@ a.three:hover{
         grid-template-rows: repeat(3, 1fr);
     }
    .homeImg{
-    height:23.33rem;
-    width:39.33rem;
-    margin-left: -47rem;
+    height: 100%;
+    width: 100%;
    }
   .footerElement{
     font-size: 3rem;
@@ -212,4 +217,20 @@ a.three:hover{
   .footerHeading{
     font-size: 5.5rem;
   }
+  .home{
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 61rem;
+  }
+  html {
+    margin: 0px;
+    height: 100%;
+    width: 100vw;
+ }
+ 
+ body {
+    margin: 0px;
+    width: 100vw;
+    position: absolute;
+ }
 }
